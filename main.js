@@ -116,6 +116,19 @@ function evaluarGanador() {
   // Completar esta función para que devuelva el número 0 si fue un empate, 1 si ganó el jugador1, o 2 si ganó el jugador2
   // En la sección "Captura de eventos del teclado", ya se asignó el valor de la jugada elegida a cada jugador (jugador1 y jugador2), y los valores posibles se encuentran en la constante OPCIONES:
   // OPCIONES.PIEDRA, OPCIONES.PAPEL, OPCIONES.TIJERA, OPCIONES.NULO
+  
+  if (jugador1 === jugador2) {
+    return 0;
+  } else if (
+    jugador2 === OPCIONES.NULO ||
+    jugador1 === OPCIONES.PIEDRA && jugador2 === OPCIONES.TIJERA ||
+    jugador1 === OPCIONES.PAPEL && jugador2 === OPCIONES.PIEDRA ||
+    jugador1 === OPCIONES.TIJERA && jugador2 === OPCIONES.PAPEL
+  ) {
+    return 1;
+  } else {
+    return 2;
+  }
 }
 
 function anunciarGanador() {
