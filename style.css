@@ -1,0 +1,89 @@
+html {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  padding: 4% 5%;
+  background-color: #0c5b62;
+  border: 10px solid #3ccee8;
+  color: #fff;
+  width: 100%;
+  max-width: 750px;
+  height: 530px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+#jugadores {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+}
+
+.contenedor-nombre {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.nombre-jugador {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+img {
+  width: 80%;
+}
+
+.borde-verde {
+  border: 10px solid #3ce867;
+}
+
+#cuenta-regresiva {
+  font-size: 40px;
+  font-weight: bold;
+  align-self: center;
+  margin-top: 80px;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+button {
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btn-nombre {
+  margin-left: 20px;
+  padding: 4px 10px;
+}
+
+#boton-comenzar {
+  width: 200px;
+  height: 50px;
+}
